@@ -4,7 +4,7 @@
 
 **Detection Payload:**
 1. Used backslash `\` to check whether our input treated as int string (single or double) or within `()`.
-2. Got error messages, ` You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '\ LIMIT 0,1' at line 1 `.
+2. Got error messages, ` You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '\') LIMIT 0,1' at line 1 `.
 3. `-1') or 1=1--+` (showed entry for id 1 because 1=1 is true)
 4. `-1') or 1=2--+` (didn't show entry, because 1=2 is false)
 
@@ -154,3 +154,4 @@ After this, navigated to `http://localhost/shell.php?cmd=cd` and got output `C:\
 
 
 Lab Solved.
+
