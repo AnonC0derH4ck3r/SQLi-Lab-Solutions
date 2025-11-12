@@ -3,7 +3,7 @@
 
 
 **Detection Payload:**
-1. Used backslash `\` to check whether our input treated as int string (single or double) or within `()`.
+1. Used backslash `\` to check whether our input treated as int or string (single or double) or within `()`.
 2. Got error messages, ` You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '\' LIMIT 0,1' at line 1 `.
 3. `-1' or 1=1--+` (showed entry for id 1 because 1=1 is true)
 4. `-1' or 1=2--+` (didn't show entry, because 1=2 is false)
@@ -153,5 +153,6 @@ Now, converted the same to ascii text and passed it to the `CHAR` function. Henc
 After this, navigated to `http://localhost/shell.php?cmd=cd` and got output `C:\xampp\htdocs` and got `Remote Code Execution` on the server.
 
 Lab Solved.
+
 
 
