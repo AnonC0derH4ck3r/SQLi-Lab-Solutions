@@ -1,4 +1,4 @@
-### **Lab - 1**
+### **Lab - 0x02**
 
 
 
@@ -151,4 +151,4 @@ Now, converted the same to ascii text and passed it to the `CHAR` function. Henc
 ```
 After this, navigated to `http://localhost/shell.php?cmd=cd` and got output `C:\xampp\htdocs` and got `Remote Code Execution` on the server.
 
-Lab Solved
+Lab Solved.
