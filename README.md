@@ -23,7 +23,7 @@ This repository includes:
 -   ✔️ Union‑based SQLi\
 -   ✔️ Blind SQLi (Boolean + Time based)\
 -   ✔️ Dumping tables, columns, users\
--   ✔️ Challenges solved on DVWA, bWAPP, SQLi‑Labs, and custom setups
+-   ✔️ Challenges solved on SQLi for Dummy Labs. (https://github.com/Audi-1/sqli-labs)
 
 ------------------------------------------------------------------------
 
