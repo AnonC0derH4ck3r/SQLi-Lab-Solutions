@@ -46,7 +46,6 @@ This repository includes:
 -   Bypassing login systems using SQLi\
 -   Union‑based data extraction\
 -   Boolean & Time‑based blind SQLi\
--   Crafting payloads to bypass filters\
 -   Understanding how insecure queries lead to full database compromise
 
 ## 📬 Connect with Me
