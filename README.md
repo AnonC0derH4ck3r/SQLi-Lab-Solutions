@@ -1,77 +1,65 @@
 # SQL Injection Practice Challenges
 
 This repository contains my personal journey of completing **SQL
-Injection (SQLi) challenges** on a localhost environment.\
-I'm documenting my progress publicly to strengthen my **cybersecurity
-portfolio** and demonstrate practical offensive security skills.
+Injection (SQLi) challenges** on my local Windows environment.\
+I'm documenting everything publicly to build a strong **cybersecurity
+portfolio** and showcase hands‑on offensive security skills.
 
 ------------------------------------------------------------------------
 
 ## 🔥 About This Project
 
-SQL Injection remains one of the most common and dangerous
-vulnerabilities in web applications.\
-To improve my skills, I practiced hands-on exploitation across multiple
-labs and deliberately vulnerable applications.
+To improve my practical knowledge of SQL Injection, I'm practicing
+using:
+
+-   **SQLi‑Labs (Audi-1)** -- My primary environment\
+-   **XAMPP on Windows** -- Running Apache + MySQL locally\
+-   Custom vulnerable queries & parameters I create during experiments
 
 This repository includes:
 
 -   ✔️ My notes and payloads\
--   ✔️ Steps to reproduce specific SQLi attacks\
--   ✔️ Authentication bypass examples\
+-   ✔️ Authentication bypass attempts\
 -   ✔️ Error‑based SQLi\
 -   ✔️ Union‑based SQLi\
 -   ✔️ Blind SQLi (Boolean + Time based)\
 -   ✔️ Dumping tables, columns, users\
--   ✔️ Challenges solved on SQLi for Dummy Labs. (https://github.com/Audi-1/sqli-labs)
+-   ✔️ Solved challenges from SQLi‑Labs
 
 ------------------------------------------------------------------------
 
 ## 🛠️ Tech & Tools Used
 
--   **DVWA**\
--   **bWAPP**\
--   **SQLi‑Labs**\
--   **MySQL / MariaDB**\
--   **Burp Suite**\
--   **Browser DevTools**\
--   **Kali Linux / Localhost environment**
+-   **SQLi‑Labs (Audi‑1)**
+-   **XAMPP (Apache + MySQL)**
+-   **MySQL**
+-   **Burp Suite**
+-   **Browser DevTools**
+-   **Windows 10/11 Localhost Environment**
 
 ------------------------------------------------------------------------
 
 ## 🧪 What I Learned
 
--   Identifying injectable parameters\
+-   Detecting SQL injection entry points\
 -   Extracting database metadata\
--   Using UNION to enumerate tables\
--   Bypassing login mechanisms\
--   Blind SQLi exploitation\
--   Crafting payloads for filtering & sanitization bypass\
--   Understanding web application trust boundaries
-
-------------------------------------------------------------------------
-
-## 📸 Screenshots / Proof of Work
-
-*(Add your screenshots here)*\
-Example:
-
-`/screenshots/challenge1.png`\
-`/screenshots/challenge2.png`
-
-------------------------------------------------------------------------
+-   Bypassing login systems using SQLi\
+-   Union‑based data extraction\
+-   Boolean & Time‑based blind SQLi\
+-   Crafting payloads to bypass filters\
+-   Understanding how insecure queries lead to full database compromise
 
 ## 📬 Connect with Me
 
-If you're interested in cybersecurity, ethical hacking, or want to
-collaborate:
+If you're into cybersecurity or want to collaborate:
 
--   **LinkedIn:** *(Add your link)*\
--   **GitHub:** *(Add your link)*
+-   **Naukrigulf:** *Huzefa Khalil Ahmed Dayanji*
+-   **GitHub:** *https://github.com/AnonC0derH4ck3r/*
+-   
 
 ------------------------------------------------------------------------
 
 ## ⭐ Support
 
-If you found my work interesting, consider giving the repo a **star ⭐**
---- it helps my journey in cybersecurity!
+If you like this project, consider giving the repo a **star ⭐** to
+support my cybersecurity journey!
