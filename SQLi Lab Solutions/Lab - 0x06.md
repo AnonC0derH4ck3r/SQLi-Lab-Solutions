@@ -1,4 +1,4 @@
-### **Lab - 0x05**
+### **Lab - 0x06**
 This is a bit tricky lab because it's not a straightforward union-based sql injection, it's boolean time-based sql injection, requires custom payload crafting
 and lot of patience.
 
