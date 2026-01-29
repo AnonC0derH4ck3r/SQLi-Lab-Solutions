@@ -1,7 +1,7 @@
 During this lab on response-based time-based SQL injection, I began by fuzzing the `id` parameter to understand how the application handled different inputs. I tested various string termination characters such as `?id=1`, `?id=1'`, and `?id=1"`, and observed that the input `?id=1"` caused the query to break, indicating the possible presence of a SQL injection point involving double quotes. To gain additional context, I viewed the page source using `CTRL + U` via the URL `view-source:http://localhost/sqli-labs-master/Less-9/?id=1`.
 
 Comparing the two responses, I noticed a difference in the size of the returned content: the first response was `965 bytes`, while the second was `1,002 bytes`. Using Burp Suite's Comparer feature, I analyzed these responses side by side and identified that the key difference was the presence of the following HTML snippet in the second response: `<font color= "#0000ff" font size= 3></font>`. This suggested that the application was conditionally including this element depending on the evaluation of the underlying SQL query.
-![alt text](<Screenshot 2026-01-29 212925-1.png>)
+![alt text](<image2.png>)
 
 To confirm this behavior, I tested Boolean-based logic using the payloads `?id=-1" or 1=1--+` and `?id=-1" or 1=2--+`. I observed that the `<font color= "#0000ff" font size= 3>` element appeared only when the condition evaluated to false, i.e., with `?id=-1" or 1=2--+`. This confirmed that the presence of this HTML tag could be used as a reliable indicator of a false condition in the SQL query, effectively providing a response-based side channel for blind SQL injection. Leveraging this, I proceeded to identify the number of columns returned by the original query using the `ORDER BY` technique. I issued payloads such as `-1" order by 1--+` and incremented the column index until the response included the `<font color= "#0000ff" font size= 3>` tag, which signaled that the specified column index was invalid and that I had exceeded the actual number of columns.
 
@@ -45,5 +45,6 @@ Guest                    HuzefaOracleDB           WDAGUtilityAccount
 ```    
 
 The command completed successfully. This output confirmed that the current user 217da had Administrator privileges, meaning there was no need for privilege escalation. With full administrative access to the server, I had successfully compromised the system through SQL injection, file enumeration, credential dumping, and ultimately achieving remote code execution via an obfuscated web shell.
+
 
 Thanks for reading :)
